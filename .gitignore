@@ -1,0 +1,8 @@
+functions/4cast-crawler/*.dist-info
+functions/4cast-crawler/bin
+functions/4cast-crawler/certifi
+functions/4cast-crawler/chardet
+functions/4cast-crawler/idna
+functions/4cast-crawler/requests
+functions/4cast-crawler/urllib3
+.vscode

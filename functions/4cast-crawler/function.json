@@ -1,0 +1,10 @@
+{
+  "memory": 128,
+  "timeout": 10,
+  "environment": {
+    "SESSIONID": ""
+  },
+  "hooks":{
+    "build": "pip install -r requirements.txt -t ."
+  }
+}

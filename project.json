@@ -1,0 +1,8 @@
+{
+  "name": "4cast-crawler-lambda",
+  "description": "",
+  "memory": 128,
+  "timeout": 5,
+  "role": "arn:aws:iam::346140095309:role/4cast-crawler-lambda_lambda_function",
+  "environment": {}
+}
