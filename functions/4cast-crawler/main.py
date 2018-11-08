@@ -20,11 +20,15 @@ def handle(event, context):
         'https://www.4cast.to/api/questions/final?size=20',
         cookies={'SESSION':session_id}
         ).json()['content']
+    
+    logger.info('success getting questions.')
 
     # filter yet vote
     questions_f = [p for p in questions if p['participated'] == False and p['endAt'] - time.time() * 1000 < 1000 * 60 * 60 * 2]
 
     for q in questions_f:
+        logger.info('vote a question.')
+        logger.info(q)
         id = str(q['id'])
 
         # get to vote
