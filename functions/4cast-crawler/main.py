@@ -17,7 +17,7 @@ def handle(event, context):
 
     # get final predicts
     questions = requests.get(
-        'https://www.4cast.to/api/questions/final?size=20',
+        'https://www.4cast.to/api/questions/final?size=30',
         cookies={'SESSION':session_id}
         ).json()['content']
     
