@@ -35,7 +35,7 @@ def handle(event, context):
         to_vote = requests.get(
             'https://www.4cast.to/api/predictions/'+id+'?page=1&size=10&questionId='+id,
             cookies={'SESSION':session_id}
-            ).json()['content'][0]
+            ).json()['content'][1]
         
         # vote most voted
         requests.post(
